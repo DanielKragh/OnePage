@@ -33,7 +33,12 @@ section,
   background: $bgColor;
   overflow: hidden;
 }
-
+#wrapper{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  position: fixed;
+}
 .page {
   position: absolute;
 }
@@ -145,7 +150,7 @@ body {
             }
           }
 
-          section {
+          main {
             width: 400%;
 
             @media #{$res-small} {
@@ -156,7 +161,7 @@ body {
 
 
 
-            main {
+            section {
               // side 1
               @import 'pages/_page1.scss';
 

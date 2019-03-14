@@ -25,6 +25,13 @@ section,
   overflow: hidden;
 }
 
+#wrapper {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  position: fixed;
+}
+
 .page {
   position: absolute;
 }
@@ -166,30 +173,30 @@ body #w1 #w2 #w3 #w4:target .page#p4 #fire {
           transform: scale(1.2);
 }
 
-body #w1 #w2 #w3 #w4 section {
+body #w1 #w2 #w3 #w4 main {
   width: 400%;
 }
 
 @media only screen and (max-width: 800px) {
-  body #w1 #w2 #w3 #w4 section {
+  body #w1 #w2 #w3 #w4 main {
     overflow: visible;
   }
 }
 
-body #w1 #w2 #w3 #w4 section nav {
+body #w1 #w2 #w3 #w4 main nav {
   position: relative;
   overflow: visible;
 }
 
-body #w1 #w2 #w3 #w4 section nav.show-nav-white i {
+body #w1 #w2 #w3 #w4 main nav.show-nav-white i {
   color: white;
 }
 
-body #w1 #w2 #w3 #w4 section nav.show-nav-dark i {
+body #w1 #w2 #w3 #w4 main nav.show-nav-dark i {
   color: #39493b;
 }
 
-body #w1 #w2 #w3 #w4 section nav i.fa-bars {
+body #w1 #w2 #w3 #w4 main nav i.fa-bars {
   display: block;
   position: absolute;
   top: 5vh;
@@ -200,13 +207,13 @@ body #w1 #w2 #w3 #w4 section nav i.fa-bars {
 }
 
 @media only screen and (min-width: 801px) {
-  body #w1 #w2 #w3 #w4 section nav i.fa-bars {
+  body #w1 #w2 #w3 #w4 main nav i.fa-bars {
     display: none;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  body #w1 #w2 #w3 #w4 section nav.show-nav ul {
+  body #w1 #w2 #w3 #w4 main nav.show-nav ul {
     bottom: -100px;
     background-color: #39493b;
     left: 0;
@@ -214,10 +221,10 @@ body #w1 #w2 #w3 #w4 section nav i.fa-bars {
   }
 }
 
-body #w1 #w2 #w3 #w4 section nav ul {
+body #w1 #w2 #w3 #w4 main nav ul {
   position: fixed;
   z-index: 1;
-  top: 0;
+  top: -10%;
   left: 0;
   bottom: 0;
   margin: auto;
@@ -228,7 +235,7 @@ body #w1 #w2 #w3 #w4 section nav ul {
 }
 
 @media only screen and (max-width: 800px) {
-  body #w1 #w2 #w3 #w4 section nav ul {
+  body #w1 #w2 #w3 #w4 main nav ul {
     position: absolute;
     width: 100%;
     height: 100px;
@@ -242,48 +249,49 @@ body #w1 #w2 #w3 #w4 section nav ul {
   }
 }
 
-body #w1 #w2 #w3 #w4 section nav ul a {
+body #w1 #w2 #w3 #w4 main nav ul a {
   text-decoration: none;
   font-family: open sans, sans-serif;
 }
 
 @media only screen and (max-width: 800px) {
-  body #w1 #w2 #w3 #w4 section nav ul a {
+  body #w1 #w2 #w3 #w4 main nav ul a {
     width: 15vw;
   }
 }
 
-body #w1 #w2 #w3 #w4 section nav ul a li {
+body #w1 #w2 #w3 #w4 main nav ul a li {
   color: #506b54;
   margin: 30px 0;
   font-size: 4vw;
 }
 
 @media only screen and (max-width: 800px) {
-  body #w1 #w2 #w3 #w4 section nav ul a li {
+  body #w1 #w2 #w3 #w4 main nav ul a li {
+    color: #ffffff;
     font-size: 40px;
   }
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 {
+body #w1 #w2 #w3 #w4 main section div#p1 {
   left: -1%;
   overflow: hidden;
   -webkit-animation: load 1s forwards;
           animation: load 1s forwards;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 figure {
+body #w1 #w2 #w3 #w4 main section div#p1 figure {
   position: relative;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 figure div.cir-bil1 {
+body #w1 #w2 #w3 #w4 main section div#p1 figure div.cir-bil1 {
   -webkit-animation: load 1s forwards;
           animation: load 1s forwards;
-  -webkit-box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.918);
-          box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.918);
+  -webkit-box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.521);
+          box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.521);
   position: absolute;
   left: 110%;
-  top: 3vh;
+  top: 12vh;
   width: 18vw;
   height: 18vw;
   border-radius: 50%;
@@ -296,23 +304,23 @@ body #w1 #w2 #w3 #w4 section main div#p1 figure div.cir-bil1 {
 }
 
 @media only screen and (max-width: 800px) {
-  body #w1 #w2 #w3 #w4 section main div#p1 figure div.cir-bil1 {
+  body #w1 #w2 #w3 #w4 main section div#p1 figure div.cir-bil1 {
     margin: 0 0vw;
     width: 200px;
     height: 200px;
   }
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 figure div.cir-bil1:hover .cir-hover {
+body #w1 #w2 #w3 #w4 main section div#p1 figure div.cir-bil1:hover .cir-hover {
   display: block;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 figure div.cir-bil1 a {
+body #w1 #w2 #w3 #w4 main section div#p1 figure div.cir-bil1 a {
   text-decoration: none;
   color: white;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 figure div.cir-bil1 a div.cir-hover {
+body #w1 #w2 #w3 #w4 main section div#p1 figure div.cir-bil1 a div.cir-hover {
   display: none;
   width: 18vw;
   height: 18vw;
@@ -320,28 +328,28 @@ body #w1 #w2 #w3 #w4 section main div#p1 figure div.cir-bil1 a div.cir-hover {
   border-radius: 50%;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 figure div.cir-bil1 a div.cir-hover p.i {
+body #w1 #w2 #w3 #w4 main section div#p1 figure div.cir-bil1 a div.cir-hover p.i {
   padding: 5vw 0 0 5vw;
   font-size: 2.2em;
   font-style: italic;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 figure div.cir-bil1 a div.cir-hover p.ii {
+body #w1 #w2 #w3 #w4 main section div#p1 figure div.cir-bil1 a div.cir-hover p.ii {
   padding: 2vw 0 0 5vw;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 figure {
+body #w1 #w2 #w3 #w4 main section div#p1 figure {
   position: relative;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 figure div.cir-bil2 {
+body #w1 #w2 #w3 #w4 main section div#p1 figure div.cir-bil2 {
   -webkit-animation: load2 1s forwards;
           animation: load2 1s forwards;
-  -webkit-box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.918);
-          box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.918);
+  -webkit-box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.527);
+          box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.527);
   position: absolute;
   left: 150%;
-  top: 16vh;
+  top: 32vh;
   width: 26vw;
   height: 26vw;
   border-radius: 50%;
@@ -354,7 +362,7 @@ body #w1 #w2 #w3 #w4 section main div#p1 figure div.cir-bil2 {
 }
 
 @media only screen and (max-width: 800px) {
-  body #w1 #w2 #w3 #w4 section main div#p1 figure div.cir-bil2 {
+  body #w1 #w2 #w3 #w4 main section div#p1 figure div.cir-bil2 {
     top: 50vh;
     margin: 0 -10vw;
     width: 250px;
@@ -362,24 +370,24 @@ body #w1 #w2 #w3 #w4 section main div#p1 figure div.cir-bil2 {
   }
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 figure:hover {
+body #w1 #w2 #w3 #w4 main section div#p1 figure:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   cursor: pointer;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 figure {
+body #w1 #w2 #w3 #w4 main section div#p1 figure {
   position: relative;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 figure div.slide-left {
+body #w1 #w2 #w3 #w4 main section div#p1 figure div.slide-left {
   -webkit-animation: load3 1s forwards;
           animation: load3 1s forwards;
-  -webkit-box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.918);
-          box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.918);
+  -webkit-box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.541);
+          box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.541);
   position: absolute;
   left: 150%;
-  top: 3vw;
+  top: 6vw;
   width: 14vw;
   height: 14vw;
   border-radius: 50%;
@@ -392,7 +400,7 @@ body #w1 #w2 #w3 #w4 section main div#p1 figure div.slide-left {
 }
 
 @media only screen and (max-width: 800px) {
-  body #w1 #w2 #w3 #w4 section main div#p1 figure div.slide-left {
+  body #w1 #w2 #w3 #w4 main section div#p1 figure div.slide-left {
     margin: 0 -10vw;
     top: 25vh;
     width: 160px;
@@ -400,23 +408,23 @@ body #w1 #w2 #w3 #w4 section main div#p1 figure div.slide-left {
   }
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 figure div.slide-left i.fa-angle-right {
+body #w1 #w2 #w3 #w4 main section div#p1 figure div.slide-left i.fa-angle-right {
   font-size: 12vw;
   -webkit-transform: translate(80%, 10%);
           transform: translate(80%, 10%);
 }
 
 @media only screen and (max-width: 800px) {
-  body #w1 #w2 #w3 #w4 section main div#p1 figure div.slide-left i.fa-angle-right {
+  body #w1 #w2 #w3 #w4 main section div#p1 figure div.slide-left i.fa-angle-right {
     font-size: 135px;
   }
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 div {
+body #w1 #w2 #w3 #w4 main section div#p1 div {
   position: relative;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 div div.om-huset {
+body #w1 #w2 #w3 #w4 main section div#p1 div div.om-huset {
   position: absolute;
   left: 100%;
   width: 100%;
@@ -425,15 +433,15 @@ body #w1 #w2 #w3 #w4 section main div#p1 div div.om-huset {
   overflow: hidden;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 div div.om-huset.show {
+body #w1 #w2 #w3 #w4 main section div#p1 div div.om-huset.show {
   left: 0%;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 div div.om-huset figure {
+body #w1 #w2 #w3 #w4 main section div#p1 div div.om-huset figure {
   position: relative;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 div div.om-huset figure div.slide-right {
+body #w1 #w2 #w3 #w4 main section div#p1 div div.om-huset figure div.slide-right {
   position: absolute;
   left: 5%;
   top: 3vw;
@@ -448,25 +456,25 @@ body #w1 #w2 #w3 #w4 section main div#p1 div div.om-huset figure div.slide-right
   transition: 2s;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 div div.om-huset figure div.slide-right i.fa-angle-right {
+body #w1 #w2 #w3 #w4 main section div#p1 div div.om-huset figure div.slide-right i.fa-angle-right {
   font-size: 6vw;
   -webkit-transform: translate(80%, 17%) rotate(180deg);
           transform: translate(80%, 17%) rotate(180deg);
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 div div.om-huset div h1 {
+body #w1 #w2 #w3 #w4 main section div#p1 div div.om-huset div h1 {
   color: black;
   margin: 10vw 0 0 20vw;
   width: 40%;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 div div.om-huset div p {
+body #w1 #w2 #w3 #w4 main section div#p1 div div.om-huset div p {
   color: black;
   margin: 2vw 0 0 20vw;
   width: 40%;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 div div.om-huset figure.billed {
+body #w1 #w2 #w3 #w4 main section div#p1 div div.om-huset figure.billed {
   margin-left: auto;
   width: 35vw;
   margin-right: 0;
@@ -475,7 +483,7 @@ body #w1 #w2 #w3 #w4 section main div#p1 div div.om-huset figure.billed {
   top: 150px;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p1 div div.om-huset figure.billed div.xl-cir-bil {
+body #w1 #w2 #w3 #w4 main section div#p1 div div.om-huset figure.billed div.xl-cir-bil {
   background: url(../img/20190218_104018.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -484,7 +492,7 @@ body #w1 #w2 #w3 #w4 section main div#p1 div div.om-huset figure.billed div.xl-c
   border-radius: 50%;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 {
+body #w1 #w2 #w3 #w4 main section div#p2 {
   left: 99%;
   background-color: #fff;
   display: -webkit-box;
@@ -495,12 +503,12 @@ body #w1 #w2 #w3 #w4 section main div#p2 {
 }
 
 @media only screen and (max-width: 600px) {
-  body #w1 #w2 #w3 #w4 section main div#p2 {
+  body #w1 #w2 #w3 #w4 main section div#p2 {
     overflow-y: scroll;
   }
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div.artikel-boks {
+body #w1 #w2 #w3 #w4 main section div#p2 div.artikel-boks {
   -webkit-box-shadow: -4px 4px 33px -10px rgba(0, 0, 0, 0.84);
           box-shadow: -4px 4px 33px -10px rgba(0, 0, 0, 0.84);
   width: 35%;
@@ -509,26 +517,26 @@ body #w1 #w2 #w3 #w4 section main div#p2 div.artikel-boks {
 }
 
 @media only screen and (max-width: 600px) {
-  body #w1 #w2 #w3 #w4 section main div#p2 div.artikel-boks {
+  body #w1 #w2 #w3 #w4 main section div#p2 div.artikel-boks {
     margin: 15vh 10% 0 10%;
     width: 80%;
   }
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div.artikel-boks figure {
+body #w1 #w2 #w3 #w4 main section div#p2 div.artikel-boks figure {
   width: 100%;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div.artikel-boks figure img {
+body #w1 #w2 #w3 #w4 main section div#p2 div.artikel-boks figure img {
   width: 100%;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div.artikel-boks figure figcaption p {
+body #w1 #w2 #w3 #w4 main section div#p2 div.artikel-boks figure figcaption p {
   color: black;
   padding: 40px 20px;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div.artikel-boks figure button {
+body #w1 #w2 #w3 #w4 main section div#p2 div.artikel-boks figure button {
   margin-left: 70%;
   background: none;
   border: none;
@@ -538,7 +546,7 @@ body #w1 #w2 #w3 #w4 section main div#p2 div.artikel-boks figure button {
   cursor: pointer;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div.artikel div.ekstra-side-a1 {
+body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 {
   position: absolute;
   left: 100%;
   width: 100%;
@@ -547,15 +555,15 @@ body #w1 #w2 #w3 #w4 section main div#p2 div.artikel div.ekstra-side-a1 {
   overflow: hidden;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div.artikel div.ekstra-side-a1.show {
+body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1.show {
   left: 0;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div.artikel div.ekstra-side-a1 figure {
+body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 figure {
   position: relative;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div.artikel div.ekstra-side-a1 figure div.slide-right {
+body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 figure div.slide-right {
   position: absolute;
   left: 5%;
   top: 3vw;
@@ -570,25 +578,25 @@ body #w1 #w2 #w3 #w4 section main div#p2 div.artikel div.ekstra-side-a1 figure d
   transition: 2s;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div.artikel div.ekstra-side-a1 figure div.slide-right i.fa-angle-right {
+body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 figure div.slide-right i.fa-angle-right {
   font-size: 6vw;
   -webkit-transform: translate(80%, 17%) rotate(180deg);
           transform: translate(80%, 17%) rotate(180deg);
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div.artikel div.ekstra-side-a1 div.artikel-kaktus div h1 {
+body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.artikel-kaktus div h1 {
   color: black;
   margin: 10vw 0 0 20vw;
   width: 40%;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div.artikel div.ekstra-side-a1 div.artikel-kaktus div p {
+body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.artikel-kaktus div p {
   color: black;
   margin: 2vw 0 0 20vw;
   width: 40%;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div.artikel div.ekstra-side-a1 div.artikel-kaktus div figure.billed {
+body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.artikel-kaktus div figure.billed {
   margin-left: auto;
   width: 35vw;
   margin-right: 0;
@@ -597,7 +605,7 @@ body #w1 #w2 #w3 #w4 section main div#p2 div.artikel div.ekstra-side-a1 div.arti
   top: 150px;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div.artikel div.ekstra-side-a1 div.artikel-kaktus div figure.billed div.xl-cir-bil {
+body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.artikel-kaktus div figure.billed div.xl-cir-bil {
   background: url(../img/20190218_101118.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -606,7 +614,7 @@ body #w1 #w2 #w3 #w4 section main div#p2 div.artikel div.ekstra-side-a1 div.arti
   border-radius: 50%;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div div.ekstra-side-a2 {
+body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 {
   position: absolute;
   left: 100%;
   width: 100%;
@@ -615,15 +623,15 @@ body #w1 #w2 #w3 #w4 section main div#p2 div div.ekstra-side-a2 {
   overflow: hidden;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div div.ekstra-side-a2.show {
+body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2.show {
   left: 0;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div div.ekstra-side-a2 figure {
+body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 figure {
   position: relative;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div div.ekstra-side-a2 figure div.slide-right {
+body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 figure div.slide-right {
   position: absolute;
   left: 5%;
   top: 3vw;
@@ -638,25 +646,25 @@ body #w1 #w2 #w3 #w4 section main div#p2 div div.ekstra-side-a2 figure div.slide
   transition: 2s;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div div.ekstra-side-a2 figure div.slide-right i.fa-angle-right {
+body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 figure div.slide-right i.fa-angle-right {
   font-size: 6vw;
   -webkit-transform: translate(80%, 17%) rotate(180deg);
           transform: translate(80%, 17%) rotate(180deg);
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div div.ekstra-side-a2 div.artikel-blomst div h1 {
+body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-blomst div h1 {
   color: black;
   margin: 10vw 0 0 20vw;
   width: 40%;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div div.ekstra-side-a2 div.artikel-blomst div p {
+body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-blomst div p {
   color: black;
   margin: 2vw 0 0 20vw;
   width: 40%;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div div.ekstra-side-a2 div.artikel-blomst div figure.billed {
+body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-blomst div figure.billed {
   margin-left: auto;
   width: 35vw;
   margin-right: 0;
@@ -665,7 +673,7 @@ body #w1 #w2 #w3 #w4 section main div#p2 div div.ekstra-side-a2 div.artikel-blom
   top: 150px;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p2 div div.ekstra-side-a2 div.artikel-blomst div figure.billed div.xl-cir-bil {
+body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-blomst div figure.billed div.xl-cir-bil {
   background: url(../img/20190218_102532.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -674,22 +682,22 @@ body #w1 #w2 #w3 #w4 section main div#p2 div div.ekstra-side-a2 div.artikel-blom
   border-radius: 50%;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p3 {
+body #w1 #w2 #w3 #w4 main section div#p3 {
   left: 200%;
   background-color: #fff;
   overflow-y: scroll;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p3 div.first figure {
+body #w1 #w2 #w3 #w4 main section div#p3 div.first figure {
   position: relative;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p3 div.first figure video {
+body #w1 #w2 #w3 #w4 main section div#p3 div.first figure video {
   margin: -5% 0 0 0;
   width: 100%;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p3 div.first figure button {
+body #w1 #w2 #w3 #w4 main section div#p3 div.first figure button {
   position: absolute;
   top: 40vw;
   left: 45%;
@@ -700,85 +708,164 @@ body #w1 #w2 #w3 #w4 section main div#p3 div.first figure button {
   cursor: pointer;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p3 div.first figure button a {
+body #w1 #w2 #w3 #w4 main section div#p3 div.first figure button a {
   display: block;
   width: 100%;
   height: 100%;
   color: white;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p3 div#second div {
+body #w1 #w2 #w3 #w4 main section div#p3 div#second div {
   width: 60%;
   padding: 10vh 0 10vh 20vw;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p3 div#second div h1 {
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p3 div#second div {
+    width: 80%;
+  }
+}
+
+body #w1 #w2 #w3 #w4 main section div#p3 div#second div h1 {
   color: black;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p3 div#second div p {
+body #w1 #w2 #w3 #w4 main section div#p3 div#second div p {
   color: black;
   line-height: 150%;
   font-weight: 500;
   margin-top: 2vh;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p3 div#second figure img {
+body #w1 #w2 #w3 #w4 main section div#p3 div#second figure img {
   width: 100%;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p4 {
+body #w1 #w2 #w3 #w4 main section div#p4 {
   overflow-y: scroll;
   left: 299%;
   background-color: #fff;
   width: 100%;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p4 div.galleri ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 90%;
+body #w1 #w2 #w3 #w4 main section div#p4 div.galleri ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 2em;
+  justify-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 3%;
-  margin-left: 4%;
+  padding: 0 10% 0 2%;
 }
 
 @media only screen and (max-width: 800px) {
-  body #w1 #w2 #w3 #w4 section main div#p4 div.galleri ul {
-    width: 100%;
-    margin-top: 6%;
-  }
-}
-
-body #w1 #w2 #w3 #w4 section main div#p4 div.galleri ul li {
-  width: 40%;
-  list-style: none;
-  margin: 3%;
-}
-
-@media only screen and (max-width: 800px) {
-  body #w1 #w2 #w3 #w4 section main div#p4 div.galleri ul li {
-    width: 42%;
-    margin: 2.5%;
+  body #w1 #w2 #w3 #w4 main section div#p4 div.galleri ul {
+    margin-top: 10%;
+    padding: 0;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  body #w1 #w2 #w3 #w4 section main div#p4 div.galleri ul li {
-    width: 90%;
+  body #w1 #w2 #w3 #w4 main section div#p4 div.galleri ul {
+    margin-top: 20%;
+    padding: 0;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
-body #w1 #w2 #w3 #w4 section main div#p4 div.galleri ul li a {
+body #w1 #w2 #w3 #w4 main section div#p4 div.galleri ul li {
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+  list-style: none;
+}
+
+body #w1 #w2 #w3 #w4 main section div#p4 div.galleri ul li:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p4 div.galleri ul li:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body #w1 #w2 #w3 #w4 main section div#p4 div.galleri ul li:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+}
+
+body #w1 #w2 #w3 #w4 main section div#p4 div.galleri ul li:nth-child(6) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3/5;
+}
+
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p4 div.galleri ul li:nth-child(6) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body #w1 #w2 #w3 #w4 main section div#p4 div.galleri ul li:nth-child(6) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
+    grid-row: 6/7;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p4 div.galleri ul li {
+    margin: 2.5%;
+  }
+}
+
+body #w1 #w2 #w3 #w4 main section div#p4 div.galleri ul li a {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
   display: block;
   position: relative;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p4 div.galleri ul li a i {
+body #w1 #w2 #w3 #w4 main section div#p4 div.galleri ul li a i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -790,15 +877,15 @@ body #w1 #w2 #w3 #w4 section main div#p4 div.galleri ul li a i {
   transition: .5s;
 }
 
-body #w1 #w2 #w3 #w4 section main div#p4 div.galleri ul li a:hover i {
+body #w1 #w2 #w3 #w4 main section div#p4 div.galleri ul li a:hover i {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }
 
-body #w1 #w2 #w3 #w4 section main div#p4 div.galleri ul li a img {
+body #w1 #w2 #w3 #w4 main section div#p4 div.galleri ul li a img {
   width: 100%;
-  -webkit-box-shadow: -4px 4px 33px 0px rgba(0, 0, 0, 0.904);
-          box-shadow: -4px 4px 33px 0px rgba(0, 0, 0, 0.904);
+  -webkit-box-shadow: -4px 4px 25px 0px rgba(0, 0, 0, 0.363);
+          box-shadow: -4px 4px 25px 0px rgba(0, 0, 0, 0.363);
 }
 
 #zoomBil {
@@ -833,6 +920,12 @@ body #w1 #w2 #w3 #w4 section main div#p4 div.galleri ul li a img {
 img.image {
   margin: 10vh 5vw;
   width: 70%;
+}
+
+p#billedText {
+  position: absolute;
+  top: 95vh;
+  left: 35%;
 }
 
 .close {

@@ -17,10 +17,10 @@ div#p1 {
       position: relative;
       div.cir-bil1 {
         animation: load 1s forwards;
-        box-shadow:-7px 10px 38px -5px rgba(0, 0, 0, 0.918);
+        box-shadow:-7px 10px 38px -5px rgba(0, 0, 0, 0.521);
         position: absolute;
         left: 110%;
-        top: 3vh;
+        top: 12vh;
         width: 18vw;
         height: 18vw;
         border-radius: 50%;
@@ -77,10 +77,10 @@ div#p1 {
 
       div.cir-bil2 {
         animation: load2 1s forwards;
-        box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.918);
+        box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.527);
         position: absolute;
         left: 150%;
-        top: 16vh;
+        top: 32vh;
         width: 26vw;
         height: 26vw;
         border-radius: 50%;
@@ -108,10 +108,10 @@ div#p1 {
 
       div.slide-left {
         animation: load3 1s forwards;
-        box-shadow:-7px 10px 38px -5px rgba(0, 0, 0, 0.918);
+        box-shadow:-7px 10px 38px -5px rgba(0, 0, 0, 0.541);
         position: absolute;
         left: 150%;
-        top: 3vw;
+        top: 6vw;
         width: 14vw;
         height: 14vw;
         border-radius: 50%;

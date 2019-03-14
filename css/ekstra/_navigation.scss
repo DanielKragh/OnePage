@@ -46,7 +46,7 @@ nav {
     ul {
       position: fixed;
       z-index: 1;
-      top: 0;
+      top: -10%;
       left: 0;
       bottom: 0;
       margin: auto;
@@ -78,6 +78,7 @@ nav {
           margin: 30px 0;
           font-size: 4vw;
           @media #{$res-small} {
+          color: #ffffff;
           font-size: 40px;
           }
         }

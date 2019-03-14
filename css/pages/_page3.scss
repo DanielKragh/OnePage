@@ -52,6 +52,9 @@ div#p3 {
       div {
         width: 60%;
         padding: 10vh 0 10vh 20vw;
+        @media #{$res-small}{
+          width: 80%;
+        }
         h1{
           color: $darktext;
         }

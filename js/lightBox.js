@@ -10,13 +10,17 @@ $('#p4').scroll(function() {
 
 // lav elementet
 var $zoomBil = $('<div id="zoomBil"></div>');
+var $divRe = $('<div style="position:relative"></div>')
 var $wrap = $('<div id="wrap"></div>');
 var $image = $('<img class="image">');
+var $text = $('<p id="billedText">Billed af en blante!</p>');
 var $close = $('<a href="#w4" class="close">&times;</a>')
 
 // 
-$zoomBil.append($wrap);
+$zoomBil.append($divRe);
+$divRe.append($wrap);
 $wrap.append($image);
+$wrap.append($text);
 $wrap.append($close);
 $('#w4').append($zoomBil);
 
