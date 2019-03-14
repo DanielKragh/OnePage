@@ -1,0 +1,181 @@
+// colors
+$bgColor: #ffffff;
+$white: #fff;
+$darktext: black;
+$lighttext: white;
+
+// responsive
+$res-big: "only screen and (min-width: 801px)";
+$res-small: "only screen and (max-width: 800px)";
+$res-xsmall: "only screen and (max-width: 600px)";
+
+
+* {
+  transition: all 500ms ease-out;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+span{
+  display: inline-block;
+}
+.letter{
+}
+html,
+body,
+section,
+.page {
+  width: 100%;
+  height: 100%;
+  transition: all 1s cubic-bezier(.5, -0.005, 10, 10) !important;
+  color: $white;
+  background: $bgColor;
+  overflow: hidden;
+}
+
+.page {
+  position: absolute;
+}
+
+.ikon {
+  color: #fff;
+  font-size: 32px;
+  display: block;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+#w2:target .page#p1,
+#w3:target .page#p1,
+#w4:target .page#p1 {
+  background: rgba(0, 0, 0, 0.397);
+}
+
+#w2:target .page#p1 .ikon,
+#w3:target .page#p1 .ikon,
+#w4:target .page#p1 .ikon {
+  filter: blur(3px);
+}
+
+#w2:target ul .ikon,
+#w3:target ul .ikon,
+#w4:target ul .ikon {
+  transform: scale(.6);
+  transition-delay: .25s;
+}
+
+@keyframes load {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 10%;
+  }
+}
+
+@keyframes load2 {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 30%;
+  }
+}
+
+@keyframes load3 {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 60%;
+  }
+}
+
+body {
+
+  #w1 {
+    #w2 {
+      &:target {
+        .page#p2 {
+          transform: translateX(-90%);
+
+          @media #{$res-small} {
+            transform: translateX(-100%);
+          }
+        }
+
+        #to {
+          transform: scale(1.2);
+        }
+      }
+
+      #w3 {
+        &:target {
+          .page#p3 {
+            transform: translateX(-190%);
+
+            @media #{$res-small} {
+              transform: translateX(-200%);
+            }
+          }
+
+          #tre {
+            transform: scale(1.2);
+          }
+        }
+
+        #w4 {
+          &:target {
+            .page#p4 {
+              transform: translateX(-290%);
+
+              @media #{$res-small} {
+                transform: translateX(-300%);
+              }
+
+              #fire {
+                transform: scale(1.2);
+              }
+            }
+          }
+
+          section {
+            width: 400%;
+
+            @media #{$res-small} {
+              overflow: visible;
+            }
+
+            @import 'ekstra/_navigation.scss';
+
+
+
+            main {
+              // side 1
+              @import 'pages/_page1.scss';
+
+              // side 2
+              @import 'pages/_page2.scss';
+
+              // side 3
+              @import 'pages/_page3.scss';
+
+              // side 4
+              @import 'pages/_page4.scss';
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// light box
+@import 'ekstra/_lightBox.scss';

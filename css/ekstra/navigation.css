@@ -1,0 +1,78 @@
+nav {
+  position: relative;
+  overflow: visible;
+}
+
+nav i.fa-bars {
+  display: block;
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  z-index: 100;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 801px) {
+  nav i.fa-bars {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  nav.show-nav ul {
+    bottom: -100px;
+    background-color: #39493b;
+  }
+}
+
+nav ul {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  height: 280px;
+  width: 10%;
+  padding: 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  nav ul {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: .5s;
+    transition: .5s;
+    bottom: 50px;
+    left: 20vw;
+  }
+}
+
+nav ul a {
+  text-decoration: none;
+  font-family: open sans, sans-serif;
+}
+
+@media only screen and (max-width: 800px) {
+  nav ul a {
+    width: 15vw;
+  }
+}
+
+nav ul a li {
+  margin: 30px 0;
+  font-size: 3vw;
+}
+
+@media only screen and (max-width: 800px) {
+  nav ul a li {
+    font-size: 40px;
+  }
+}
+/*# sourceMappingURL=navigation.css.map */

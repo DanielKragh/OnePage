@@ -1,0 +1,210 @@
+// colors
+$bgColor: #39493b;
+$white: #fff;
+$darktext: black;
+$lighttext: white;
+
+// responsive
+$res-big: "only screen and (min-width: 801px)";
+$res-small: "only screen and (max-width: 800px)";
+$res-xsmall: "only screen and (max-width: 600px)";
+
+div#p1 {
+    left: -1%;
+    overflow: hidden;
+    animation: load 1s forwards;
+    figure {
+      position: relative;
+      div.cir-bil1 {
+        animation: load 1s forwards;
+        box-shadow:-7px 10px 38px -5px rgba(0, 0, 0, 0.918);
+        position: absolute;
+        left: 110%;
+        top: 3vh;
+        width: 18vw;
+        height: 18vw;
+        border-radius: 50%;
+        background: center;
+        background-repeat: no-repeat;
+        background-image: url(../img/20190218_101053.jpg);
+        background-size: 180%;
+        transition: 1s;
+        @media #{$res-small}{
+          margin: 0 0vw;
+          width: 200px;
+          height: 200px;
+        }
+
+        &:hover {
+          .cir-hover {
+            display: block;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: white;
+
+          div.cir-hover {
+            display: none;
+            width: 18vw;
+            height: 18vw;
+            background-color: rgba(65, 114, 55, 0.5);
+            border-radius: 50%;
+
+            p {
+
+              &.i {
+                padding: 5vw 0 0 5vw;
+                font-size: 2.2em;
+                font-style: italic;
+              }
+            }
+
+            p {
+
+              &.ii {
+                padding: 2vw 0 0 5vw;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    figure {
+      position: relative;
+
+      div.cir-bil2 {
+        animation: load2 1s forwards;
+        box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.918);
+        position: absolute;
+        left: 150%;
+        top: 16vh;
+        width: 26vw;
+        height: 26vw;
+        border-radius: 50%;
+        background: center;
+        background-repeat: no-repeat;
+        background-image: url(../img/20190218_101511.jpg);
+        background-size: 180%;
+        transition: 2s;
+        @media #{$res-small}{
+          top: 50vh;
+          margin: 0 -10vw;
+          width: 250px;
+          height: 250px;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+    }
+
+    figure {
+      position: relative;
+
+      div.slide-left {
+        animation: load3 1s forwards;
+        box-shadow:-7px 10px 38px -5px rgba(0, 0, 0, 0.918);
+        position: absolute;
+        left: 150%;
+        top: 3vw;
+        width: 14vw;
+        height: 14vw;
+        border-radius: 50%;
+        background: center;
+        background-repeat: no-repeat;
+        background-color: rgba(87, 119, 87, 0.5);
+        background-size: 180%;
+        transition: 2s;
+        @media #{$res-small}{
+          margin: 0 -10vw;
+          top: 25vh;
+          width: 160px;
+          height: 160px;
+        }
+        i.fa-angle-right {
+          font-size: 12vw;
+          transform: translate(80%, 10%);
+          @media #{$res-small}{
+            font-size: 135px;
+          }
+        }
+      }
+    }
+
+    div {
+      position: relative;
+
+      div.om-huset {
+        position: absolute;
+        left: 100%;
+        width: 100%;
+        height: 1000px;
+        background-color: white;
+        overflow: hidden;
+
+        &.show {
+          left: 0%;
+        }
+
+        figure {
+          position: relative;
+
+          div.slide-right {
+            position: absolute;
+            left: 5%;
+            top: 3vw;
+            width: 8vw;
+            height: 8vw;
+            border-radius: 50%;
+            background: center;
+            background-repeat: no-repeat;
+            background-color: rgba(87, 119, 87, 0.5);
+            background-size: 180%;
+            transition: 2s;
+
+            i.fa-angle-right {
+              font-size: 6vw;
+              transform: translate(80%, 17%) rotate(180deg);
+            }
+          }
+        }
+
+        div {
+          h1 {
+            color: $darktext;
+            margin: 10vw 0 0 20vw;
+            width: 40%;
+          }
+
+          p {
+            color: $darktext;
+            margin: 2vw 0 0 20vw;
+            width: 40%;
+          }
+        }
+
+        figure.billed {
+          margin-left: auto;
+          width: 35vw;
+          margin-right: 0;
+          position: absolute;
+          right: 70px;
+          top: 150px;
+
+          div.xl-cir-bil {
+            background: url(../img/20190218_104018.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 40vw;
+            height: 40vw;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }

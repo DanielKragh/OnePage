@@ -1,0 +1,56 @@
+// colors
+$bgColor: #39493b;
+$white: #fff;
+$darktext: black;
+$lighttext: white;
+
+// responsive
+$res-big: "only screen and (min-width: 801px)";
+$res-small: "only screen and (max-width: 800px)";
+
+
+// light Box
+#zoomBil {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: none;
+    text-align: center;
+    width:100%;
+  }
+    .wrap {
+      border: 8px solid $white;
+      border-radius: 3px;
+      background: $white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation-name: lightboxZoom;
+      animation-duration: 0.3s;
+      width: 100%;
+    }
+     img.image {
+      margin: 10vh 5vw;
+      width: 70%;
+     }
+    .close {
+     color: white;
+     cursor: pointer;
+     background: none;
+     border-radius: 50%;
+     font-size: 4em;
+     line-height: 1;
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     padding: 3px;
+     text-decoration: none;
+     &:hover {
+      transform: rotate(180deg);
+     }
+    } 

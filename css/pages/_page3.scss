@@ -1,0 +1,72 @@
+// colors
+$bgColor: #39493b;
+$white: #fff;
+$darktext: black;
+$lighttext: white;
+
+// responsive
+$res-big: "only screen and (min-width: 801px)";
+$res-small: "only screen and (max-width: 800px)";
+$res-xsmall: "only screen and (max-width: 600px)";
+
+
+div#p3 {
+    left: 200%;
+    background-color: $white;
+    overflow-y: scroll;
+
+    div.first {
+      
+      figure {
+        position: relative;
+
+        video {
+          margin: -5% 0 0 0;
+          width: 100%;
+        }
+
+        button {
+          position: absolute;
+          top: 40vw;
+          left: 45%;
+          font-size: 60px;
+          background: none;
+          border: none;
+          color: $lighttext;
+          cursor: pointer;
+            a {
+              display: block;
+              width: 100%;
+              height: 100%;
+              color: white;
+              i {
+              }
+            }
+          }
+        }
+      }
+
+    div{
+     &#second {
+
+      div {
+        width: 60%;
+        padding: 10vh 0 10vh 20vw;
+        h1{
+          color: $darktext;
+        }
+        p {
+          color: $darktext;
+          line-height: 150%;
+          font-weight: 500;
+          margin-top: 2vh;
+        }
+      }
+      figure{
+        img{
+          width: 100%
+        }
+      }
+    }
+  } 
+}
