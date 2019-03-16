@@ -297,7 +297,7 @@ body #w1 #w2 #w3 #w4 main section div#p1 figure div.cir-bil1 {
   border-radius: 50%;
   background: center;
   background-repeat: no-repeat;
-  background-image: url(../../img/kicking-workout_925x.jpg);
+  background-image: url(../img/kicking-workout_925x.jpg);
   background-size: 180%;
   -webkit-transition: 1s;
   transition: 1s;
@@ -353,7 +353,7 @@ body #w1 #w2 #w3 #w4 main section div#p1 figure div.cir-bil2 {
   border-radius: 50%;
   background: center;
   background-repeat: no-repeat;
-  background-image: url(../../img/Working-Out-With-Chalk_925x.jpg);
+  background-image: url(../img/Working-Out-With-Chalk_925x.jpg);
   background-size: 180%;
   -webkit-transition: 2s;
   transition: 2s;
@@ -612,7 +612,7 @@ body #w1 #w2 #w3 #w4 main section div#p1 div figure.billed {
 }
 
 body #w1 #w2 #w3 #w4 main section div#p1 div figure.billed div.xl-cir-bil {
-  background: url(../../img/arm-back-muscles_925x.jpg);
+  background: url(../img/arm-back-muscles_925x.jpg);
   background-repeat: no-repeat;
   background-size: fill;
   width: 40vw;
@@ -808,7 +808,7 @@ body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.arti
 }
 
 body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.artikel-et div figure.billed div.xl-cir-bil {
-  background: url(../../img/squatting-exercise_925x.jpg);
+  background: url(../img/squatting-exercise_925x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 40vw;
@@ -942,7 +942,7 @@ body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-to d
 }
 
 body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-to div figure.billed div.xl-cir-bil {
-  background: url(../../img/man-lifting-weights_925x.jpg);
+  background: url(../img/man-lifting-weights_925x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 40vw;
