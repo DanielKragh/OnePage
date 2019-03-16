@@ -438,11 +438,11 @@ body #w1 #w2 #w3 #w4 main section div#p1 figure div.slide-left i.fa-angle-right 
   }
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div {
+body #w1 #w2 #w3 #w4 main section div#p1 div.rela {
   position: relative;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.contact {
+body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact {
   position: absolute;
   left: 100%;
   width: 100%;
@@ -452,21 +452,21 @@ body #w1 #w2 #w3 #w4 main section div#p1 div div.contact {
 }
 
 @media only screen and (max-width: 800px) {
-  body #w1 #w2 #w3 #w4 main section div#p1 div div.contact {
+  body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact {
     overflow-y: scroll;
   }
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.contact.show {
+body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact.show {
   left: 0%;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.contact figure {
+body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact figure {
   position: relative;
   z-index: 100;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.contact figure div.slide-right {
+body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact figure div.slide-right {
   position: absolute;
   left: 5%;
   top: 50px;
@@ -483,7 +483,7 @@ body #w1 #w2 #w3 #w4 main section div#p1 div div.contact figure div.slide-right 
 }
 
 @media only screen and (max-width: 800px) {
-  body #w1 #w2 #w3 #w4 main section div#p1 div div.contact figure div.slide-right {
+  body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact figure div.slide-right {
     left: 65%;
     top: 25px;
     width: 16vw;
@@ -491,75 +491,62 @@ body #w1 #w2 #w3 #w4 main section div#p1 div div.contact figure div.slide-right 
   }
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.contact figure div.slide-right i.fa-angle-right {
+body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact figure div.slide-right i.fa-angle-right {
   font-size: 6vw;
   -webkit-transform: translate(80%, 17%) rotate(180deg);
           transform: translate(80%, 17%) rotate(180deg);
 }
 
 @media only screen and (max-width: 800px) {
-  body #w1 #w2 #w3 #w4 main section div#p1 div div.contact figure div.slide-right i.fa-angle-right {
+  body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact figure div.slide-right i.fa-angle-right {
     font-size: 12vw;
   }
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div {
+body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact div {
   width: 30%;
 }
 
 @media only screen and (max-width: 800px) {
-  body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div {
+  body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact div {
     width: 80%;
   }
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form {
+body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact div form {
   width: 100%;
   padding: 100px 0 0 0;
   margin: 0 30vw;
 }
 
 @media only screen and (max-width: 800px) {
-  body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form {
+  body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact div form {
     margin: 0;
   }
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form h2 {
+body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact div form h2 {
   color: black;
   font-size: 3em;
   text-align: center;
 }
 
 @media only screen and (max-width: 800px) {
-  body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form h2 {
+  body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact div form h2 {
     font-size: 12vw;
   }
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form label {
+body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact div form label {
   width: 100%;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form input {
+body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact div form input {
   width: 100%;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form input[type=text],
-body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form input select {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form input[type=email],
-body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form input select {
+body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact div form input[type=text],
+body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact div form input select {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -571,7 +558,20 @@ body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form input select {
   resize: vertical;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form input[type=submit] {
+body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact div form input[type=email],
+body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact div form input select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact div form input[type=submit] {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
@@ -580,11 +580,11 @@ body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form input[type=sub
   cursor: pointer;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form input[type=submit]:hover {
+body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact div form input[type=submit]:hover {
   background-color: #45a049;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form textarea {
+body #w1 #w2 #w3 #w4 main section div#p1 div.rela div.contact div form textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -596,7 +596,7 @@ body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form textarea {
   resize: vertical;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div figure.billed {
+body #w1 #w2 #w3 #w4 main section div#p1 div.rela figure.billed {
   margin-left: auto;
   width: 45vw;
   margin-right: 0;
@@ -606,12 +606,12 @@ body #w1 #w2 #w3 #w4 main section div#p1 div figure.billed {
 }
 
 @media only screen and (max-width: 800px) {
-  body #w1 #w2 #w3 #w4 main section div#p1 div figure.billed {
+  body #w1 #w2 #w3 #w4 main section div#p1 div.rela figure.billed {
     display: none;
   }
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div figure.billed div.xl-cir-bil {
+body #w1 #w2 #w3 #w4 main section div#p1 div.rela figure.billed div.xl-cir-bil {
   background: url(../img/arm-back-muscles_925x.jpg);
   background-repeat: no-repeat;
   background-size: fill;
