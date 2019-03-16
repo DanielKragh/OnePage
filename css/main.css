@@ -199,8 +199,8 @@ body #w1 #w2 #w3 #w4 main nav.show-nav-dark i {
 body #w1 #w2 #w3 #w4 main nav i.fa-bars {
   display: block;
   position: absolute;
-  top: 5vh;
-  left: 5vw;
+  top: 35px;
+  left: 35px;
   z-index: 100;
   font-size: 30px;
   cursor: pointer;
@@ -224,7 +224,7 @@ body #w1 #w2 #w3 #w4 main nav i.fa-bars {
 body #w1 #w2 #w3 #w4 main nav ul {
   position: fixed;
   z-index: 1;
-  top: -10%;
+  top: -20%;
   left: 0;
   bottom: 0;
   margin: auto;
@@ -291,7 +291,7 @@ body #w1 #w2 #w3 #w4 main section div#p1 figure div.cir-bil1 {
           box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.521);
   position: absolute;
   left: 110%;
-  top: 12vh;
+  top: 18vh;
   width: 18vw;
   height: 18vw;
   border-radius: 50%;
@@ -305,9 +305,7 @@ body #w1 #w2 #w3 #w4 main section div#p1 figure div.cir-bil1 {
 
 @media only screen and (max-width: 800px) {
   body #w1 #w2 #w3 #w4 main section div#p1 figure div.cir-bil1 {
-    margin: 0 0vw;
-    width: 200px;
-    height: 200px;
+    display: none;
   }
 }
 
@@ -349,7 +347,7 @@ body #w1 #w2 #w3 #w4 main section div#p1 figure div.cir-bil2 {
           box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.527);
   position: absolute;
   left: 150%;
-  top: 32vh;
+  top: 42vh;
   width: 26vw;
   height: 26vw;
   border-radius: 50%;
@@ -363,21 +361,35 @@ body #w1 #w2 #w3 #w4 main section div#p1 figure div.cir-bil2 {
 
 @media only screen and (max-width: 800px) {
   body #w1 #w2 #w3 #w4 main section div#p1 figure div.cir-bil2 {
-    top: 50vh;
-    margin: 0 -10vw;
+    top: 55vh;
+    margin: 0 -20vw;
     width: 250px;
     height: 250px;
   }
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 figure:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  cursor: pointer;
-}
-
 body #w1 #w2 #w3 #w4 main section div#p1 figure {
   position: relative;
+}
+
+body #w1 #w2 #w3 #w4 main section div#p1 figure h2 {
+  color: black;
+  position: absolute;
+  left: 30%;
+  top: 2vw;
+  font-size: 60px;
+  font-weight: 700;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #3da034;
+          text-decoration-color: #3da034;
+}
+
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p1 figure h2 {
+    font-size: 30px;
+    top: 15vh;
+    left: 0%;
+  }
 }
 
 body #w1 #w2 #w3 #w4 main section div#p1 figure div.slide-left {
@@ -386,8 +398,8 @@ body #w1 #w2 #w3 #w4 main section div#p1 figure div.slide-left {
   -webkit-box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.541);
           box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.541);
   position: absolute;
-  left: 150%;
-  top: 6vw;
+  left: 170%;
+  top: 14vw;
   width: 14vw;
   height: 14vw;
   border-radius: 50%;
@@ -399,12 +411,18 @@ body #w1 #w2 #w3 #w4 main section div#p1 figure div.slide-left {
   transition: 2s;
 }
 
+body #w1 #w2 #w3 #w4 main section div#p1 figure div.slide-left:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 800px) {
   body #w1 #w2 #w3 #w4 main section div#p1 figure div.slide-left {
-    margin: 0 -10vw;
-    top: 25vh;
-    width: 160px;
-    height: 160px;
+    margin: 0 -20vw;
+    top: 28vh;
+    width: 170px;
+    height: 170px;
   }
 }
 
@@ -416,7 +434,7 @@ body #w1 #w2 #w3 #w4 main section div#p1 figure div.slide-left i.fa-angle-right 
 
 @media only screen and (max-width: 800px) {
   body #w1 #w2 #w3 #w4 main section div#p1 figure div.slide-left i.fa-angle-right {
-    font-size: 135px;
+    font-size: 145px;
   }
 }
 
@@ -424,27 +442,34 @@ body #w1 #w2 #w3 #w4 main section div#p1 div {
   position: relative;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.om-huset {
+body #w1 #w2 #w3 #w4 main section div#p1 div div.contact {
   position: absolute;
   left: 100%;
   width: 100%;
-  height: 1000px;
+  height: 100vh;
   background-color: white;
   overflow: hidden;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.om-huset.show {
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p1 div div.contact {
+    overflow-y: scroll;
+  }
+}
+
+body #w1 #w2 #w3 #w4 main section div#p1 div div.contact.show {
   left: 0%;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.om-huset figure {
+body #w1 #w2 #w3 #w4 main section div#p1 div div.contact figure {
   position: relative;
+  z-index: 100;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.om-huset figure div.slide-right {
+body #w1 #w2 #w3 #w4 main section div#p1 div div.contact figure div.slide-right {
   position: absolute;
   left: 5%;
-  top: 3vw;
+  top: 50px;
   width: 8vw;
   height: 8vw;
   border-radius: 50%;
@@ -454,36 +479,139 @@ body #w1 #w2 #w3 #w4 main section div#p1 div div.om-huset figure div.slide-right
   background-size: 180%;
   -webkit-transition: 2s;
   transition: 2s;
+  cursor: pointer;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.om-huset figure div.slide-right i.fa-angle-right {
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p1 div div.contact figure div.slide-right {
+    left: 65%;
+    top: 25px;
+    width: 16vw;
+    height: 16vw;
+  }
+}
+
+body #w1 #w2 #w3 #w4 main section div#p1 div div.contact figure div.slide-right i.fa-angle-right {
   font-size: 6vw;
   -webkit-transform: translate(80%, 17%) rotate(180deg);
           transform: translate(80%, 17%) rotate(180deg);
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.om-huset div h1 {
-  color: black;
-  margin: 10vw 0 0 20vw;
-  width: 40%;
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p1 div div.contact figure div.slide-right i.fa-angle-right {
+    font-size: 12vw;
+  }
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.om-huset div p {
-  color: black;
-  margin: 2vw 0 0 20vw;
-  width: 40%;
+body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div {
+  width: 30%;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.om-huset figure.billed {
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div {
+    width: 80%;
+  }
+}
+
+body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form {
+  width: 100%;
+  padding: 100px 0 0 0;
+  margin: 0 30vw;
+}
+
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form {
+    margin: 0;
+  }
+}
+
+body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form h2 {
+  color: black;
+  font-size: 3em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form h2 {
+    font-size: 12vw;
+  }
+}
+
+body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form label {
+  width: 100%;
+}
+
+body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form input {
+  width: 100%;
+}
+
+body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form input[type=text],
+body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form input select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form input[type=email],
+body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form input select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+body #w1 #w2 #w3 #w4 main section div#p1 div div.contact div form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+body #w1 #w2 #w3 #w4 main section div#p1 div figure.billed {
   margin-left: auto;
-  width: 35vw;
+  width: 45vw;
   margin-right: 0;
   position: absolute;
   right: 70px;
-  top: 150px;
+  top: 100px;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p1 div div.om-huset figure.billed div.xl-cir-bil {
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p1 div figure.billed {
+    display: none;
+  }
+}
+
+body #w1 #w2 #w3 #w4 main section div#p1 div figure.billed div.xl-cir-bil {
   background: url(../../img/arm-back-muscles_925x.jpg);
   background-repeat: no-repeat;
   background-size: fill;
@@ -502,21 +630,20 @@ body #w1 #w2 #w3 #w4 main section div#p2 {
       flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   body #w1 #w2 #w3 #w4 main section div#p2 {
     overflow-y: scroll;
   }
 }
 
 body #w1 #w2 #w3 #w4 main section div#p2 div.artikel-boks {
-  -webkit-box-shadow: -4px 4px 33px -10px rgba(0, 0, 0, 0.84);
-          box-shadow: -4px 4px 33px -10px rgba(0, 0, 0, 0.84);
+  -webkit-box-shadow: -4px 4px 33px -10px rgba(0, 0, 0, 0.84), inset 0px 11px 8px -10px #CCC, inset 0px -11px 8px -10px #CCC;
+          box-shadow: -4px 4px 33px -10px rgba(0, 0, 0, 0.84), inset 0px 11px 8px -10px #CCC, inset 0px -11px 8px -10px #CCC;
   width: 35%;
   margin: 15vh 5% 0 5%;
-  max-height: 70%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   body #w1 #w2 #w3 #w4 main section div#p2 div.artikel-boks {
     margin: 15vh 10% 0 10%;
     width: 80%;
@@ -532,31 +659,58 @@ body #w1 #w2 #w3 #w4 main section div#p2 div.artikel-boks figure img {
 }
 
 body #w1 #w2 #w3 #w4 main section div#p2 div.artikel-boks figure figcaption h3 {
+  font-size: 2em;
   color: black;
   padding: 20px 0 0 30px;
 }
 
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p2 div.artikel-boks figure figcaption h3 {
+    font-size: 1.5em;
+  }
+}
+
 body #w1 #w2 #w3 #w4 main section div#p2 div.artikel-boks figure figcaption p {
+  font-size: 1.3em;
   color: black;
   padding: 30px 30px;
+  line-height: 35px;
+}
+
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p2 div.artikel-boks figure figcaption p {
+    line-height: 30px;
+    font-size: 1em;
+  }
 }
 
 body #w1 #w2 #w3 #w4 main section div#p2 div.artikel-boks figure button {
-  margin-left: 5%;
-  margin-bottom: 10px;
+  margin: 20px 40%;
   background: none;
   border: none;
   color: #3da034;
-  font-size: 20px;
   font-weight: 600;
+  font-size: 1.8em;
+  border-bottom: 3px solid black;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p2 div.artikel-boks figure button {
+    font-size: 1.4em;
+  }
+}
+
+body #w1 #w2 #w3 #w4 main section div#p2 div.artikel-boks figure button:hover {
+  border-bottom: 3px solid #208a29;
 }
 
 body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 {
   position: absolute;
   left: 100%;
+  top: 0;
   width: 100%;
-  height: 1000px;
+  height: 250%;
   background-color: white;
   overflow: hidden;
 }
@@ -578,10 +732,19 @@ body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 figure d
   border-radius: 50%;
   background: center;
   background-repeat: no-repeat;
-  background-color: rgba(87, 119, 87, 0.5);
+  background-color: #3da034;
   background-size: 180%;
   -webkit-transition: 2s;
   transition: 2s;
+}
+
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 figure div.slide-right {
+    left: 75%;
+    top: 25px;
+    width: 16vw;
+    height: 16vw;
+  }
 }
 
 body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 figure div.slide-right i.fa-angle-right {
@@ -590,28 +753,61 @@ body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 figure d
           transform: translate(80%, 17%) rotate(180deg);
 }
 
-body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.artikel-kaktus div h1 {
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 figure div.slide-right i.fa-angle-right {
+    font-size: 12vw;
+  }
+}
+
+body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.artikel-et div h2 {
   color: black;
   margin: 10vw 0 0 20vw;
   width: 40%;
+  font-size: 2em;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.artikel-kaktus div p {
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.artikel-et div h2 {
+    margin: 30vw 0 30px 10%;
+    width: 80%;
+  }
+}
+
+body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.artikel-et div p {
   color: black;
-  margin: 2vw 0 0 20vw;
+  margin: 2vw 0 20px 20vw;
   width: 40%;
+  font-size: 1.4;
+  line-height: 25px;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.artikel-kaktus div figure.billed {
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.artikel-et div p {
+    margin: 10px 0 0 10%;
+    width: 80%;
+  }
+  body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.artikel-et div p:nth-child(4) {
+    margin: 380px 0 0 10%;
+  }
+}
+
+body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.artikel-et div figure.billed {
   margin-left: auto;
   width: 35vw;
   margin-right: 0;
   position: absolute;
-  right: 70px;
-  top: 150px;
+  right: 110px;
+  top: 500px;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.artikel-kaktus div figure.billed div.xl-cir-bil {
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.artikel-et div figure.billed {
+    top: 470px;
+    z-index: 0;
+  }
+}
+
+body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.artikel-et div figure.billed div.xl-cir-bil {
   background: url(../../img/squatting-exercise_925x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -620,11 +816,36 @@ body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.arti
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.artikel-et div figure.billed div.xl-cir-bil {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.artikel-et div button {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.artikel-et div button {
+    display: block;
+    background: none;
+    border: none;
+    margin: 30px 45%;
+  }
+  body #w1 #w2 #w3 #w4 main section div#p2 div.artikel div.ekstra-side-a1 div.artikel-et div button i.fa-angle-up {
+    color: #3da034;
+    font-size: 70px;
+  }
+}
+
 body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 {
   position: absolute;
   left: 100%;
+  top: 0;
   width: 100%;
-  height: 1000px;
+  height: 250%;
   background-color: white;
   overflow: hidden;
 }
@@ -646,10 +867,19 @@ body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 figure div.slide
   border-radius: 50%;
   background: center;
   background-repeat: no-repeat;
-  background-color: rgba(87, 119, 87, 0.5);
+  background-color: #3da034;
   background-size: 180%;
   -webkit-transition: 2s;
   transition: 2s;
+}
+
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 figure div.slide-right {
+    left: 75%;
+    top: 25px;
+    width: 16vw;
+    height: 16vw;
+  }
 }
 
 body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 figure div.slide-right i.fa-angle-right {
@@ -658,34 +888,90 @@ body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 figure div.slide
           transform: translate(80%, 17%) rotate(180deg);
 }
 
-body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-blomst div h1 {
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 figure div.slide-right i.fa-angle-right {
+    font-size: 12vw;
+  }
+}
+
+body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-to div h2 {
   color: black;
   margin: 10vw 0 0 20vw;
   width: 40%;
+  font-size: 2em;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-blomst div p {
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-to div h2 {
+    margin: 30vw 0 30px 10%;
+    width: 80%;
+  }
+}
+
+body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-to div p {
   color: black;
-  margin: 2vw 0 0 20vw;
+  margin: 2vw 0 20px 20vw;
   width: 40%;
+  font-size: 1.4;
+  line-height: 25px;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-blomst div figure.billed {
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-to div p {
+    margin: 10px 0 0 10%;
+    width: 80%;
+  }
+  body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-to div p:nth-child(4) {
+    margin: 380px 0 0 10%;
+  }
+}
+
+body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-to div figure.billed {
   margin-left: auto;
   width: 35vw;
   margin-right: 0;
   position: absolute;
-  right: 70px;
-  top: 150px;
+  right: 110px;
+  top: 500px;
 }
 
-body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-blomst div figure.billed div.xl-cir-bil {
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-to div figure.billed {
+    top: 470px;
+  }
+}
+
+body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-to div figure.billed div.xl-cir-bil {
   background: url(../../img/man-lifting-weights_925x.jpg);
   background-repeat: no-repeat;
-  background-size: fill;
+  background-size: cover;
   width: 40vw;
   height: 40vw;
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-to div figure.billed div.xl-cir-bil {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-to div button {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-to div button {
+    display: block;
+    background: none;
+    border: none;
+    margin: 30px 45%;
+  }
+  body #w1 #w2 #w3 #w4 main section div#p2 div div.ekstra-side-a2 div.artikel-to div button i.fa-angle-up {
+    color: #3da034;
+    font-size: 70px;
+  }
 }
 
 body #w1 #w2 #w3 #w4 main section div#p3 {
@@ -745,7 +1031,7 @@ body #w1 #w2 #w3 #w4 main section div#p3 div#second div p {
 
 body #w1 #w2 #w3 #w4 main section div#p3 div#second figure {
   width: 100%;
-  height: 350px;
+  height: 500px;
   background: url(../../img/athlete-barbell-bodybuilder-949129.jpg);
   background-repeat: no-repeat;
   background-size: cover;

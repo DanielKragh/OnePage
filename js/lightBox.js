@@ -3,8 +3,8 @@ $(function(){
 
     // light box tilpasser sig skærmen
 var scrollDis;
-$('#p4').scroll(function() {
-  scrollDis = $('#p4').scrollTop();  
+$('#p2, #p4').scroll(function() {
+  scrollDis = $('#p2, #p4').scrollTop();  
 });
 
 
@@ -13,7 +13,7 @@ var $zoomBil = $('<div id="zoomBil"></div>');
 var $divRe = $('<div style="position:relative"></div>')
 var $wrap = $('<div id="wrap"></div>');
 var $image = $('<img class="image">');
-var $text = $('<p id="billedText">Billed af en blante!</p>');
+var $text = $('<p id="billedText"></p>');
 var $close = $('<a href="#w4" class="close">&times;</a>')
 
 // 
