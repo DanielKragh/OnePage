@@ -1,4 +1,5 @@
 // colors
+$themeColor: #3da034;
 $bgColor: #39493b;
 $white: #fff;
 $darktext: black;
@@ -26,7 +27,7 @@ div#p1 {
         border-radius: 50%;
         background: center;
         background-repeat: no-repeat;
-        background-image: url(../img/20190218_101053.jpg);
+        background-image: url(../../img/kicking-workout_925x.jpg);
         background-size: 180%;
         transition: 1s;
         @media #{$res-small}{
@@ -86,7 +87,7 @@ div#p1 {
         border-radius: 50%;
         background: center;
         background-repeat: no-repeat;
-        background-image: url(../img/20190218_101511.jpg);
+        background-image: url(../../img/Working-Out-With-Chalk_925x.jpg);
         background-size: 180%;
         transition: 2s;
         @media #{$res-small}{
@@ -117,7 +118,7 @@ div#p1 {
         border-radius: 50%;
         background: center;
         background-repeat: no-repeat;
-        background-color: rgba(87, 119, 87, 0.5);
+        background-color: $themeColor;
         background-size: 180%;
         transition: 2s;
         @media #{$res-small}{
@@ -163,7 +164,7 @@ div#p1 {
             border-radius: 50%;
             background: center;
             background-repeat: no-repeat;
-            background-color: rgba(87, 119, 87, 0.5);
+            background-color: $themeColor;
             background-size: 180%;
             transition: 2s;
 
@@ -197,9 +198,9 @@ div#p1 {
           top: 150px;
 
           div.xl-cir-bil {
-            background: url(../img/20190218_104018.jpg);
+            background: url(../../img/arm-back-muscles_925x.jpg);
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: fill;
             width: 40vw;
             height: 40vw;
             border-radius: 50%;

@@ -3,6 +3,7 @@ $bgColor: #39493b;
 $white: #fff;
 $darktext: black;
 $lighttext: white;
+$themeColor: #3da034;
 
 // responsive
 $res-big: "only screen and (min-width: 801px)";
@@ -22,7 +23,7 @@ div#p2 {
       box-shadow: -4px 4px 33px -10px rgba(0, 0, 0, 0.84);
       width: 35%;
       margin: 15vh 5% 0 5%;
-      height: 70vh;
+      max-height: 70%;
       @media #{$res-xsmall} {
       margin: 15vh 10% 0 10%;
       width: 80%;
@@ -35,17 +36,22 @@ div#p2 {
         }
 
         figcaption {
+          h3{
+            color: $darktext;
+            padding: 20px 0 0 30px;
+          }
           p {
             color: $darktext;
-            padding: 40px 20px;
+            padding: 30px 30px;
           }
         }
 
         button {
-          margin-left: 70%;
+          margin-left: 5%;
+          margin-bottom: 10px; 
           background: none;
           border: none;
-          color: $bgColor;
+          color: $themeColor;
           font-size: 20px;
           font-weight: 600;
           cursor: pointer;
@@ -113,7 +119,7 @@ div#p2 {
               top: 150px;
 
               div.xl-cir-bil {
-                background: url(../img/20190218_101118.jpg);
+                background: url(../../img/squatting-exercise_925x.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 width: 40vw;
@@ -185,9 +191,9 @@ div#p2 {
               top: 150px;
 
               div.xl-cir-bil {
-                background: url(../img/20190218_102532.jpg);
+                background: url(../../img/man-lifting-weights_925x.jpg);
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: fill;
                 width: 40vw;
                 height: 40vw;
                 border-radius: 50%;
