@@ -10,78 +10,82 @@ $res-small: "only screen and (max-width: 800px)";
 
 
 nav {
-    position: relative;
-    overflow: visible;
-    &.show-nav-white i{
-      color: rgb(255, 255, 255);
-    }
-    &.show-nav-dark i{
-      color: $bgColor;
-    }
-    i.fa-bars {
-      display: block;
-      position: absolute;
-      top: 35px;
-      left: 35px;
-      z-index: 100;
-      font-size: 30px;
-      cursor: pointer;
+  position: relative;
+  overflow: visible;
 
-      @media #{$res-big} {
-        display: none;
-      }
-    }
-    @media #{$res-small} {
-      
+  &.show-nav-white i {
+    color: rgb(255, 255, 255);
+  }
 
-      &.show-nav ul{
-        bottom: -100px;
-        background-color: $themeColor;
-        left: 0;
-        padding-left: 20vw;
-        
-      }
-      
+  &.show-nav-dark i {
+    color: $bgColor;
+  }
+
+  i.fa-bars {
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    z-index: 100;
+    font-size: 30px;
+    cursor: pointer;
+
+    @media #{$res-big} {
+      display: none;
     }
-    ul {
-      position: fixed;
-      z-index: 1;
-      top: -20%;
+  }
+
+  @media #{$res-small} {
+    &.show-nav ul {
+      bottom: -100px;
+      background-color: $themeColor;
       left: 0;
-      bottom: 0;
-      margin: auto;
-      height: 280px;
-      width: 10%;
-      padding: 0;
-      text-align: center;
+      padding-left: 25vw;
+      z-index: 99;
+    }
+  }
+
+  ul {
+    position: fixed;
+    z-index: 1;
+    top: -20%;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    height: 280px;
+    width: 10%;
+    padding: 0;
+    text-align: center;
+
+    @media #{$res-small} {
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      display: flex;
+      transition: .5s;
+      bottom: 50px;
+      left: 20vw;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: open sans, sans-serif;
 
       @media #{$res-small} {
-        position: absolute;
-        width: 100%;
-        height: 100px;
-        display: flex;
-        transition: .5s;
-        bottom: 50px;
-        left: 20vw;
+        width: 15vw;
       }
 
-      a {
-        text-decoration: none;
-        font-family: open sans, sans-serif;
+      li {
+        color: $themeColor;
+        margin: 30px 0;
+        font-size: 4vw;
 
         @media #{$res-small} {
-          width: 15vw;
-        }
-
-        li {
-          color: $themeColor;
-          margin: 30px 0;
-          font-size: 4vw;
-          @media #{$res-small} {
           color: #ffffff;
-          font-size: 40px;
-          }
+          font-size: 32px;
+          margin: 34px 0;
         }
       }
     }
   }
+}

@@ -142,11 +142,10 @@ body {
 
               @media #{$res-small} {
                 transform: translateX(-300%);
-              }
-
-              #fire {
-                transform: scale(1.2);
-              }
+              } 
+            }
+            #fire {
+              transform: scale(1.2);
             }
           }
 

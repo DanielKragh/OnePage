@@ -18,7 +18,7 @@ div#p1 {
   figure {
     position: relative;
 
-    div.cir-bil1 {
+    div.cir-img1 {
       animation: load 1s forwards;
       box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.521);
       position: absolute;
@@ -77,7 +77,7 @@ div#p1 {
   figure {
     position: relative;
 
-    div.cir-bil2 {
+    div.cir-img2 {
       animation: load2 1s forwards;
       box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.527);
       position: absolute;
@@ -100,13 +100,14 @@ div#p1 {
       }
     }
 
-    
+
   }
 
   figure {
     position: relative;
-    h2{
-      color:black;
+
+    h2 {
+      color: black;
       position: absolute;
       left: 30%;
       top: 2vw;
@@ -114,12 +115,14 @@ div#p1 {
       font-weight: 700;
       text-decoration: underline;
       text-decoration-color: $themeColor;
+
       @media #{$res-small} {
-      font-size: 30px;
-      top: 15vh;
-      left:0%
+        font-size: 30px;
+        top: 15vh;
+        left: 0%
       }
     }
+
     div.slide-left {
       animation: load3 1s forwards;
       box-shadow: -7px 10px 38px -5px rgba(0, 0, 0, 0.541);
@@ -134,10 +137,12 @@ div#p1 {
       background-color: $themeColor;
       background-size: 180%;
       transition: 2s;
+
       &:hover {
         transform: scale(1.05);
         cursor: pointer;
       }
+
       @media #{$res-small} {
         margin: 0 -20vw;
         top: 28vh;
@@ -156,9 +161,9 @@ div#p1 {
     }
   }
 
-  div.rela {
+  div.contact-slide {
     position: relative;
-    
+
     div.contact {
       position: absolute;
       left: 100%;
@@ -166,17 +171,20 @@ div#p1 {
       height: 100vh;
       background-color: white;
       overflow: hidden;
+
       @media #{$res-small} {
         overflow-y: scroll;
       }
+
       &.show {
         left: 0%;
-        
+
       }
 
       figure {
         position: relative;
         z-index: 100;
+
         div.slide-right {
           position: absolute;
           left: 5%;
@@ -190,15 +198,19 @@ div#p1 {
           background-size: 180%;
           transition: 2s;
           cursor: pointer;
+
           @media #{$res-small} {
             left: 65%;
             top: 25px;
             width: 16vw;
-            height: 16vw;  
+            height: 16vw;
+            z-index: 98;
           }
+
           i.fa-angle-right {
             font-size: 6vw;
             transform: translate(80%, 17%) rotate(180deg);
+
             @media #{$res-small} {
               font-size: 12vw
             }
@@ -207,26 +219,31 @@ div#p1 {
       }
 
       div {
-         width: 30%;
-         @media #{$res-small} {
+        width: 30%;
+
+        @media #{$res-small} {
           width: 80%;
         }
+
         form {
           width: 100%;
           padding: 100px 0 0 0;
           margin: 0 30vw;
+
           @media #{$res-small} {
-          margin: 0 0 400px 0;
+            margin: 0 0 400px 0;
           }
-        
+
           h2 {
-          color: $darktext;
-          font-size: 3em;
-          text-align: center;
-          @media #{$res-small} {
-            font-size: 12vw
+            color: $darktext;
+            font-size: 3em;
+            text-align: center;
+
+            @media #{$res-small} {
+              font-size: 12vw
+            }
           }
-          } 
+
           label {
             width: 100%;
           }
@@ -284,20 +301,38 @@ div#p1 {
             resize: vertical;
           }
         }
-      }  
+
+        button {
+          display: none;
+
+          @media #{$res-small} {
+            display: block;
+            background: none;
+            border: none;
+            margin: 30px 45%;
+
+            i.fa-angle-up {
+              color: $themeColor;
+              font-size: 70px;
+            }
+          }
+        }
+      }
     }
-    figure.billed {
+
+    figure.image {
       margin-left: auto;
       width: 45vw;
       margin-right: 0;
       position: absolute;
       right: 70px;
       top: 100px;
+
       @media #{$res-small} {
-        display: none; 
+        display: none;
       }
 
-      div.xl-cir-bil {
+      div.xl-cir-img {
         background: url(../img/arm-back-muscles_925x.jpg);
         background-repeat: no-repeat;
         background-size: fill;

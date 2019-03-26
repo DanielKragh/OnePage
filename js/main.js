@@ -17,7 +17,7 @@ $(function () {
 
   });
 
-  
+
 
 
 
@@ -25,10 +25,9 @@ $(function () {
     nav.toggleClass('show-nav');
     nav.toggleClass('show-nav-dark')
   });
-  
+
   $(function () {
     var hash = window.location.hash;
-    console.log(hash)
     if (hash == '#w3') {
       nav.addClass('show-nav-dark');
     }
@@ -57,26 +56,34 @@ $(function () {
   // Artikel side slide
   $(".slide-left-a1").click(function () {
     $(".ekstra-side-a1").addClass('show');
-    $("#p2").animate({ scrollTop: 0 }, "slow");
+    $("#p2").animate({
+      scrollTop: 0
+    }, "slow");
     return false;
   });
   $('.slide-right').click(function () {
-    $(".slide-right").css({'position':'absolute'});
+    $(".slide-right").css({
+      'position': 'absolute'
+    });
     $('.ekstra-side-a1').removeClass('show');
   });
   $(".slide-left-a2").click(function () {
     $(".ekstra-side-a2").addClass('show');
-    $("#p2").animate({ scrollTop: 0 }, "slow");
+    $("#p2").animate({
+      scrollTop: 0
+    }, "slow");
     return false;
   });
   $('.slide-right').click(function () {
     $('.ekstra-side-a2').removeClass('show');
   });
-// scoll up
-$('.fa-angle-up').on('click', function(){
-  $("#p2").animate({ scrollTop: 0 }, "slow");
+  // scoll up
+  $('.fa-angle-up').on('click', function () {
+    $("#p2, .contact").animate({
+      scrollTop: 0
+    }, "slow");
     return false;
-})
+  })
 
 
   // scroll Down
