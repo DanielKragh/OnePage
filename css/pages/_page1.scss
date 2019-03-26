@@ -216,8 +216,9 @@ div#p1 {
           padding: 100px 0 0 0;
           margin: 0 30vw;
           @media #{$res-small} {
-          margin: 0;
+          margin: 0 0 400px 0;
           }
+        
           h2 {
           color: $darktext;
           font-size: 3em;
